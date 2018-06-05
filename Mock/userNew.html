@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ユーザー新規登録</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<style>
+p.center{text-align:center}
+a.red { color : #f00}
+#header {background-color: #708090;}
+#container{width: 800px; margin: 0 auto;}
+input.form-control { width: 500px; }
+</style>
+</head>
+<body>
+<div class="container">
+	<div id="header">
+		<div align="right">
+			<h5><p class="text-white">ユーザ名&nbsp;さん&emsp;&emsp;&emsp;<a class="red" href="login.html"><u>ログアウト</u></a></p></h5>
+		</div>
+	</div>
+	<p class="h1" align="center"><strong>ユーザー新規登録</strong></p>
+	<br></br>
+	<form>
+		<div class="form-group row">
+		    <label for="inputPassword" class="col-sm-2 col-form-label"><strong>ログインID</strong></label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="inputPassword" placeholder="ログインID">
+  		  	</div>
+  		</div>
+  		<div class="form-group row">
+		    <label for="inputPassword" class="col-sm-2 col-form-label"><strong>パスワード</strong></label>
+		    <div class="col-sm-10">
+		      <input type="password" class="form-control" id="inputPassword" placeholder="パスワード">
+  		  	</div>
+  		</div>
+  		<div class="form-group row">
+		    <label for="inputPassword" class="col-sm-2 col-form-label"><strong>パスワード（確認）</strong></label>
+		    <div class="col-sm-10">
+		      <input type="password" class="form-control" id="inputPassword" placeholder="パスワード（確認）">
+  		  	</div>
+  		</div>
+  		<div class="form-group row">
+		    <label for="inputPassword" class="col-sm-2 col-form-label"><strong>ユーザ名</strong></label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="inputPassword" placeholder="ユーザ名">
+  		  	</div>
+  		</div>
+  		<div class="form-group row">
+		    <label for="inputPassword" class="col-sm-2 col-form-label"><strong>生年月日</strong></label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="inputPassword" placeholder="生年月日">
+  		  	</div>
+  		</div>
+  		<br></br>
+  		<p class="center"><button type="button" class="btn btn-secondary" form="" onClick="location.href='userList.html'"><h6>　　登録　　</h6></button></p>
+	</form>
+	<br></br>
+	<div align="left">
+		<p><a href="userList.html"><u>戻る</u></a></p>
+	</div>
+</div>
+</body>
+</html>

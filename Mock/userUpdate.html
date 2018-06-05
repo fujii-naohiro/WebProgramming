@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ユーザ情報更新</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<style>
+a.red { color : #f00}
+#header {background-color: #708090;}
+input.form-control { width: 700px; }
+</style>
+</head>
+<body>
+ form="" onClick="location.href='userList.html'"
+<div class="container">
+	<div id="header">
+		<div align="right">
+			<h5><p class="text-white">ユーザ名&nbsp;さん&emsp;&emsp;&emsp; <a class="red" onClick="location.href='login.html'"><u>ログアウト</u></a></p></h5>
+		</div>
+	</div>
+	<br></br>
+	<p class="h1" align="center"><strong>ユーザ情報更新</strong></p>
+	<br></br>
+	<div class="form-group row">
+	    <label for="staticEmail" class="col-sm-2 col-form-label"><strong>ログインID</strong></label>
+	    <div class="col-sm-10">
+	      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Id0001">
+	    </div>
+	</div>
+	<form>
+		<div class="form-group row">
+		    <label for="inputPassword" class="col-sm-2 col-form-label"><strong>パスワード</strong></label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="inputPassword" placeholder="パスワード">
+  		  	</div>
+  		</div>
+		<div class="form-group row">
+		    <label for="inputPassword" class="col-sm-2 col-form-label"><strong>パスワード（確認）</strong></label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="inputPassword" placeholder="パスワード（確認）">
+  		  	</div>
+  		</div>
+  		<div class="form-group row">
+		    <label for="inputPassword" class="col-sm-2 col-form-label"><strong>ユーザ名</strong></label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="inputPassword" value="田中太郎">
+  		  	</div>
+  		</div>
+  		<div class="form-group row">
+		    <label for="inputPassword" class="col-sm-2 col-form-label"><strong>生年月日</strong></label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="inputPassword" value="1989/04/26">
+  		  	</div>
+  		</div>
+
+  	</form>
+  	<br></br>
+  	<div align="center">
+  	<button type="button" class="btn btn-secondary btn-lg" form="" onClick="location.href='userList.html'">　　更新　　</button>
+  	</div>
+  	<br></br>
+  	<div align="left">
+		<p><a href="userList.html"><u>戻る</u></a></p>
+	</div>
+</div>
+
+</body>
+</html>

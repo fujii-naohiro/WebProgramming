@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ユーザ一覧</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<style>
+a.red { color : #f00}
+#header {background-color: #708090;}
+input.form-control { width: 700px; }
+</style>
+</head>
+<body>
+<div class="container">
+	<div id="header">
+		<div align="right">
+			<h5><p class="text-white">ユーザ名&nbsp;さん&emsp;&emsp;&emsp; <a class="red" href="login.html"><u>ログアウト</u></a></p></h5>
+		</div>
+	</div>
+	<br></br>
+	<h1 align="center"><strong>ユーザ一覧</strong></h1>
+	<br></br>
+	<div align="right">
+		<a href="userNew.html"><u>新規登録</u></a>&emsp;&emsp;
+	</div>
+		<div class="form-group row">
+		   <label for="inputPassword" class="col-sm-2 col-form-label"><strong>ログインID</strong></label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="inputPassword" placeholder="ログインID">
+	  	  	</div>
+	  	</div>
+	  	<div class="form-group row">
+		    <label for="inputPassword" class="col-sm-2 col-form-label"><strong>ユーザ名</strong></label>
+		    <div class="col-sm-10">
+		      <input type="text" class="form-control" id="inputPassword" placeholder="ユーザ名">
+	  	  	</div>
+	  	</div>
+	  	<strong>生年月日</strong>　　　　　　　　<input type="date" name="date">　　〜　　<input type="date" name="date">
+  	<br></br>
+  	<div align="right">
+  		<button type="button" class="btn btn-secondary btn-lg">　　検索　　</button>
+  	</div>
+  	<br /><hr/>
+	<table class="table table-bordered">
+	  <thead>
+	    <tr bgcolor="#d3d3d3">
+	      <th scope="col">ログインID</th>
+	      <th scope="col">ユーザ名</th>
+	      <th scope="col">生年月日</th>
+	      <th scope="col"></th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td>Id0001</td>
+	      <td>田中太郎</td>
+	      <td>1989年04年26日</td>
+	      <td  width="350">
+			<button type="button" class="btn btn-primary" form="" onClick="location.href='userReference.html'">　詳細　</button>&nbsp;&nbsp;&nbsp;
+			<button type="button" class="btn btn-success" form="" onClick="location.href='userUpdate.html'">　更新　</button>&nbsp;&nbsp;&nbsp;
+			<button type="button" class="btn btn-danger" form="" onClick="location.href='userDelete.html'">　削除　</button>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>Id0002</td>
+	      <td>佐藤二郎</td>
+	      <td>2001年11年12日</td>
+	      <td>
+	      	<button type="button" class="btn btn-primary" form="" onClick="location.href='userReference.html'">　詳細　</button>&nbsp;&nbsp;&nbsp;
+	      	<button type="button" class="btn btn-success" form="" onClick="location.href='userUpdate.html'">　更新　</button>&nbsp;&nbsp;&nbsp;
+	      	<button type="button" class="btn btn-danger" form="" onClick="location.href='userDelete.html'">　削除　</button>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>Id0003</td>
+	      <td>佐川真司</td>
+	      <td>2000年01年01日</td>
+	      <td>
+	      	<button type="button" class="btn btn-primary" form="" onClick="location.href='userReference.html'">　詳細　</button>&nbsp;&nbsp;&nbsp;
+	      	<button type="button" class="btn btn-success" form="" onClick="location.href='userUpdate.html'">　更新　</button>&nbsp;&nbsp;&nbsp;
+	      	<button type="button" class="btn btn-danger" form="" onClick="location.href='userDelete.html'">　削除　</button>
+	      </td>
+	    </tr>
+	  </tbody>
+	</table>
+</div>
+
+</body>
+</html>
